@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>My College</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .heading {
+        text-align: center;
+        margin-top: 24px;
+        padding: 24px;
+        background-color: #031d44;
+        color: #fff !important;
+        margin-bottom: 32px;
+      }
+
+      .containers {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 68px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-info i {
+        font-size: 24px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .college-logo {
+        width: 400px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .title {
+        text-align: center;
+      }
+      .department {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      .department img {
+        width: 90%;
+        margin-bottom: 32px;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="media.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="navbar sticky">
+      <div class="topnav container" id="nav">
+        <div class="left">
+          <a class="logo" href="index.html">SmartGuide</a>
+        </div>
+        <div class="right">
+          <a href="#news">My College</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Faculty
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="department/Civil.html">Civil Engineering</a>
+              <a href="department/it.html">It Engineering</a>
+              <a href="department/ce.html">Computer Engineering</a>
+              <a href="department/mech.html">Mechanical Engineering</a>
+              <a href="department/ec.html">Electrical Engineering</a>
+            </div>
+          </div>
+
+          <a href="#">Study Material</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Exam
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="https://set.gtu.ac.in/circular/">Circular</a>
+              <a href="https://student.gtu.ac.in/login.aspx">Hall Ticket</a>
+              <a href="https://www.gturesults.in/">GTU Results</a>
+            </div>
+          </div>
+          <a href="#" class="login">Login</a>
+        </div>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <h2 class="heading heading-primary">Welcome To GEC, Bhavnagar</h2>
+    <div class="containers">
+      <div class="info">
+        <img src="gec.jpg" alt="College Logo" class="college-logo" />
+        <p style="font-style: italic" class="hero-description">
+          Visit Official Website of
+          <a href="http://www.gecbh.cteguj.in" target="_blank">
+            Government Engineering College, Bhavnagar
+          </a>
+        </p>
+      </div>
+      <div class="department">
+        <div>
+          <h3 class="hero-description">Computer Department</h3>
+          <img src="CampusImages/comp_dept1.jpg" alt="Computer Department" />
+        </div>
+        <div>
+          <h3 class="hero-description">IT Department</h3>
+          <img src="CampusImages/k.jpg" alt="IT Department" />
+        </div>
+        <div>
+          <h3 class="hero-description">EC Department</h3>
+          <img src="CampusImages/ec_dept.jpg" alt="EC Department" />
+        </div>
+        <div>
+          <h3 class="hero-description">workshop</h3>
+          <img src="CampusImages/workshop.jpeg" alt="workshop" />
+        </div>
+      </div>
+      <h3 class="title">Contact Information</h3>
+      <div class="contact-info">
+        <p>
+          <i class="fa-sharp fa-solid fa-map-location-dot"></i> Government
+          Engineering College, Nr. BPTI, Vidyanagar, Bhavnagar
+        </p>
+        <p><i class="fa-solid fa-phone-volume"></i> 2782525354</p>
+        <p><i class="fa-solid fa-envelope"></i> gec-bhav-dte@gujarat.gov.in</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container grid--4-col">
+        <div class="logo-col">
+          <a class="logo footer-logo" href="../index.html">SmartGuide</a>
+          <p class="copyright">
+            Copyright &copy; 2050 by SmartGuide,Inc. <br />All rights reserved
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact Us</p>
+          <address class="contacts">
+            <p class="address">Government Engineering College, Bhavnagar</p>
+            <p class="footer-link">hello@smartguide.com</p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Departments</p>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="it.html">Information Technology</a>
+            </li>
+            <li><a class="footer-link" href="mech.html">Mechanical</a></li>
+            <li><a class="footer-link" href="ec.html">EC</a></li>
+            <li><a class="footer-link" href="Civil.html">Civil</a></li>
+            <li>
+              <a class="footer-link" href="ce.html">Computer Engineering</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

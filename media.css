@@ -1,0 +1,156 @@
+/* ***************** */
+/* SMALLER THAN 1000PX */
+/* ***************** */
+@media (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+  /* Faculty */
+  .pr-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .faculty {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+  }
+  .container {
+    width: 80rem;
+  }
+}
+/* ***************** */
+/* SMALLER THAN 912PX */
+/* ***************** */
+@media (max-width: 57em) {
+  html {
+    font-size: 50%;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .right {
+    background-color: #031d44ed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav-open .right {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .right a {
+    font-size: 32px;
+  }
+  .dropdown .dropbtn {
+    font-size: 32px;
+  }
+  .dropdown-content a {
+    font-size: 16px;
+  }
+  .grid--4-col {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+}
+
+/* ***************** */
+/* SMALLER THAN 672PX */
+/* ***************** */
+@media (max-width: 42em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+/* ***************** */
+/* SMALLER THAN 560PX */
+/* ***************** */
+@media (max-width: 35em) {
+  html {
+    font-size: 31.25%;
+  }
+  .faculty {
+    width: 80%;
+  }
+  .grid--4-col {
+    grid-template-columns: 1fr 1fr;
+    gap: 4.2rem;
+    margin: 2.4rem;
+  }
+}
+/* ***************** */
+/* SMALLER THAN 448PX */
+/* ***************** */
+@media (max-width: 28em) {
+  html {
+    font-size: 37.5%;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .hero-img {
+    width: 60rem;
+  }
+  .grid--4-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logo-col {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .footer {
+    padding: 3.2rem 0;
+  }
+  .hero-img-box {
+    text-align: center;
+  }
+  .hero-text-box {
+    text-align: center;
+  }
+  .cta-text-box {
+    padding: 4.8rem;
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+  .hero-description {
+    font-size: 3.6rem;
+  }
+  .btn {
+    font-size: 3.2rem !important;
+  }
+  .footer-nav {
+    gap: 0.2rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

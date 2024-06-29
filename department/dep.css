@@ -1,0 +1,53 @@
+/*********************************/
+/* Faculty Card */
+/*********************************/
+.pr-image {
+  height: 20rem;
+}
+.pr-card {
+  background-image: linear-gradient(to bottom right, #031d44, #4f617c);
+  border-radius: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.pr-name {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+.pr-details {
+  color: rgb(215, 215, 215);
+  list-style: none;
+}
+.contain {
+  margin: 2rem;
+}
+.image-container {
+  margin: 2rem auto;
+}
+.faculty {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+.heading {
+  padding: 2.4rem 0;
+  margin-top: 2.4rem;
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.5) !important;
+
+  background-color: rgb(255, 255, 255);
+  top: 0;
+}
+.pr-details li {
+  line-height: 1.6;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.faculty {
+  margin-bottom: 6.4rem;
+}

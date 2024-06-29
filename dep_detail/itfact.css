@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  border: 1px solid #333;
+  width: 45rem;
+  overflow: auto;
+  background: linear-gradient(45deg, #036eb7, #64eaff);
+}
+.pic {
+  float: left;
+  clear: left;
+}
+.detail {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.pic img {
+  display: block;
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  margin: 0.9rem;
+}
+
+.info {
+  margin-left: 210px;
+  margin-top: 0.5rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 150%;
+  padding-bottom: 2rem;
+}
+@media (max-width: 720px) {
+}
